@@ -1,0 +1,93 @@
+:root{
+    
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated: hsl(229, 23%, 23%);
+--Dark-grayish: hsl(227, 10%, 46%);
+--Dark-gray: hsl(0, 0%, 59%);
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: var(--Dark-cyan);
+    background-image:url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat no-repeat; 
+    background-position: right 50vw bottom 50vh,left 50vw top 50vh;
+    
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    background-color: white;
+    width: 428px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px var(--Dark-grayish);
+
+    &-header{
+        display: block;
+        width: 100%;
+    }
+    
+    &-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-img{
+           border:5px solid rgb(245, 239, 239);
+           padding: 3px;
+           border-radius: 50%;
+           background-color: white;
+           margin-top:calc(-48px - 5px);
+        }
+        &-title{
+            font-size: 2rem;
+        
+            span{
+                margin-left: 7px;
+                font-weight: 400;
+                color:var(--Dark-gray);
+            }
+        }
+        &-text{
+            margin-top:-7px;
+            font-size:2rem;
+            font-weight: 400;
+            color:var(--Dark-gray);
+        }
+        border-bottom: 3px solid #F6F6F6;
+        
+    }
+
+    &-footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &-social{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            
+            h3{
+                font-size: 2rem;
+            }
+            p{  font-size: 1.5rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    
+    
+    
+}
